@@ -2,10 +2,9 @@ language: C
 
 jobs: 
   include: 
-    - stage: compile 
+    - stage: test 
       script: 
       - cd hello
       - make clean 
       - make all  
-    - stage: test
-      script: ./hello
+      - ./hello
