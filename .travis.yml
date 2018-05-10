@@ -3,6 +3,8 @@ language: C
 jobs: 
   include: 
     - stage: compile 
-      script: make -C hello/ clean all 
+      script: cd hello
+      script: make clean 
+      script: make all  
     - stage: test
       script: hello/hello  
