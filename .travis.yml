@@ -3,8 +3,10 @@ language: C
 jobs: 
   include: 
     - stage: compile 
-      script: cd hello
-      script: make clean 
-      script: make all  
+      script: 
+        - |
+          cd hello
+          make clean 
+          make all  
     - stage: test
       script: hello/hello  
