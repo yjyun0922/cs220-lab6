@@ -4,9 +4,8 @@ jobs:
   include: 
     - stage: compile 
       script: 
-        - |
-          cd hello
-          make clean 
-          make all  
+      - cd hello
+      - make clean 
+      - make all  
     - stage: test
       script: hello/hello  
