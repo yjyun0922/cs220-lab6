@@ -8,6 +8,4 @@ jobs:
       - make clean 
       - make all  
     - stage: test
-      script: 
-      - cd hello
-      - ./hello  
+      script: ./hello
