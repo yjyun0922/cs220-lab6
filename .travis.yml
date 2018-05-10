@@ -3,6 +3,6 @@ language: C
 jobs: 
   include: 
     - stage: compile 
-      script: make -C cs220-lab6/hello/ clean all 
+      script: make -C hello/ clean all 
     - stage: test
-      script: cs220-lab6/hello/hello  
+      script: hello/hello  
